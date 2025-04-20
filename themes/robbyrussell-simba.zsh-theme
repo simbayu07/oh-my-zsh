@@ -26,7 +26,8 @@ function box_name {
 }
 
 
-PROMPT="${FG[237]}\${(l.\$(afmagic_dashes)..-.)}%{$reset_color%}"
+#PROMPT="${FG[237]}\${(l.\$(afmagic_dashes)..-.)}%{$reset_color%}"
+PROMPT=""
 PROMPT+="$userInfo"
 PROMPT+="@${FG[033]}$(box_name)${FG[239]}"
 PROMPT+="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} ) %{$fg[cyan]%}%c%{$reset_color%}"
